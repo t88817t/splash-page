@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GitHub Pages Test</title>
-<style>
-    body {
-        background-image: url('https://raw.githubusercontent.com/t88817t/splash-page/main/meisei2.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログインページ</title>
 </head>
+<body>
+    <h1>ログイン</h1>
+    <form action="/submit" method="POST">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="class">クラス:</label>
+        <input type="text" id="class" name="class" required><br><br>
+        <input type="submit" value="送信">
+    </form>
+</body>
 </html>
